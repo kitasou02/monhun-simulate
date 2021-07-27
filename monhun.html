@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./src/monhun.js"></script>
+  <style>
+   .text-button{
+     background-color:white;
+  }
+
+  </style>
+</head>
+
+<body>
+  <fieldset>
+  攻撃力:<input id="power"type="number" min="0">
+  会心率:<input id="critical_rate"type="number"max="100" min="-100">
+  属性:
+  <select id="elemental">
+　<option value="無"selected>無</option>
+  <option value="火">火</option>
+  <option value="水">水</option>
+  <option value="雷">雷</option>
+　<option value="氷">氷</option>
+　<option value="龍">龍</option>
+  </select>
+　
+  </fieldset>
+
+  <fieldset>
+  スキル<br>
+  攻撃:<select id="attack">
+  <option value="0"selected>なし</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  </select>
+  
+  見切り:<select id="critical_up">
+  <option value="0"selected>なし</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  </select>
+  
+  弱点特攻:<select id="critical">
+  <option value="0"selected>なし</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  </select>
+ 
+  超会心:<select id="critical_sp">
+    <option value="0"selected>なし</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+
+  </fieldset>
+  
+  <fieldset>
+  切れ味:
+  <select id="cut">
+  <option value="赤">赤</option>
+  <option value="橙">橙</option>
+  <option value="黄">黄</option>
+　<option value="緑"selected>緑</option>
+　<option value="青">青</option>
+　<option value="白">白</option>
+  <option value="紫">紫</option>
+  </select>
+  </fieldset>
+  <br>
+  <button id = "calculate"class="text-button" type=button>計算</button>
+  <button id = "save"class="text-button" type=button>保存</button>
+</body>
+
+</html>
